@@ -1,23 +1,15 @@
 {
   "name": "bluethink/custom",
-  "description": "bluethink custom",
-  "require": {
-    "php": "~5.5.0|~5.6.0",
-    "magento/magento-composer-installer": "*"
-  },
+  "description": "bluethink custom module",
   "type": "magento2-module",
   "version": "1.0.0",
-  "license": [
-    "OSL-3.0",
-    "AFL-3.0"
-  ],
-  "extra": {
-    "map": [
-      [
-        "*",
-        "Bluethink/Custom"
-      ]
-    ]
-  }
-
+  "license": "OSL-3.0",
+  "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bluethink\\Custom\\": ""
+        }
+    }
 }
